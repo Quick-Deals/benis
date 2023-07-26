@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import Logo from "./Logo";
+import { hamburger } from "../assets";
+import { useContext } from "react";
+import { ToggleContext } from "../context/toggleContext";
 
 const NavData = [
   { name: "How to Buy", path: "/", color: "#000", bg: "#FCF4D1" },
@@ -16,9 +19,11 @@ const NavData = [
 ];
 
 const Navbar = () => {
+  const { handleToggle } = useContext(ToggleContext);
   return (
     <Nav>
       <Logo />
+      <Hamburger onClick={handleToggle} />
       <NavHeader>
         {NavData.map((link, index) => {
           return (
@@ -44,6 +49,7 @@ const Nav = styled.nav`
   margin-bottom: 2em;
   @media screen and (max-width: 990px) {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 `;
 
@@ -89,5 +95,30 @@ const HeaderLinks = styled.li`
       font-size: 16px;
       padding: 8px;
     }
+  }
+`;
+
+const Hamburger = styled.button`
+  padding: 0;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  width: 24px;
+  height: 24px;
+  background: url(${hamburger}) no-repeat;
+  transition: 0.8s ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+    transform: scale(0.8);
+  }
+
+  @media screen and (min-width: 990px) {
+    display: none;
   }
 `;
