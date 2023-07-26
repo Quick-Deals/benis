@@ -47,6 +47,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   /* position: absolute; */
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Header = styled.p`
@@ -79,5 +83,12 @@ const Link = styled.li`
     text-decoration-line: underline;
     color: #854426;
     text-align: left;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    & a {
+      font-size: 16px;
+    }
   }
 `;

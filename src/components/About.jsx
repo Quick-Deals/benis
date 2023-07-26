@@ -83,6 +83,10 @@ export default About;
 
 const Container = styled.section`
   padding: 1em;
+
+  @media screen and (max-width: 768px) {
+    padding: 1em 0;
+  }
 `;
 
 const Header = styled.header`
@@ -94,6 +98,10 @@ const Header = styled.header`
   line-height: normal;
   text-decoration-line: underline;
   margin: 1em 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const Card1 = styled.div`
@@ -101,6 +109,7 @@ const Card1 = styled.div`
   justify-content: flex-start;
   align-items: center;
   gap: 4em;
+  position: relative;
 
   & p {
     color: #000;
@@ -110,12 +119,27 @@ const Card1 = styled.div`
     font-weight: 700;
     line-height: 30px;
     max-width: 896px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
   }
 
   & div.image {
+    /* position: absolute;
+    left: 100%; */
     min-width: 261px;
     height: 203px;
     background: url(${card1}), lightgray 50% / cover no-repeat;
+  }
+
+  @media screen and (max-width: 1120px) {
+    & div.image {
+      display: none;
+    }
   }
 `;
 
@@ -127,7 +151,14 @@ const Card2 = styled.div`
   margin: 4em auto;
   display: flex;
   position: relative;
-  background: url(${card2}), lightgray 50% / cover no-repeat;
+  background: url(${card2}), lightgray 50% / contain no-repeat;
+
+  @media screen and (max-width: 768px) {
+    width: MIN(100%, 375.199px);
+    padding: 1em;
+    background-size: 100%;
+    margin: 2em auto;
+  }
 `;
 
 const Links1 = styled.ul`
@@ -136,8 +167,11 @@ const Links1 = styled.ul`
   margin: 0;
   color: #854426;
   width: MIN(349px, 85%);
-  
-  
+
+  & li {
+    font-size: 24px;
+  }
+
   & li > a {
     color: inherit;
     font-family: Comic Sans MS;
@@ -158,6 +192,32 @@ const Links1 = styled.ul`
     &.bottom {
       bottom: 3em;
       right: 2em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: MIN(164.748px, 85%);
+    padding: 0;
+
+    & li {
+      font-size: 8.503px;
+    }
+
+    & li > a {
+      font-size: 8.503px;
+    }
+
+    &.absolute {
+      position: absolute;
+
+      &.top {
+        top: 0;
+      }
+
+      &.bottom {
+        bottom: 3em;
+        right: 0;
+      }
     }
   }
 `;
