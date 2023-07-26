@@ -37,8 +37,8 @@ const Container = styled.footer`
 
   @media screen and (max-width: 990px) {
     padding: 1em 0em;
-    min-width: 106%;
-    margin-left: -3%;
+    min-width: 104%;
+    margin-left: -2%;
   }
 `;
 

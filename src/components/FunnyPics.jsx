@@ -58,14 +58,14 @@ const ImgContainer = styled.div`
   width: 100%;
   padding: 2em;
   height: 100vh;
-  max-height: 1100px;
   max-width: 1280px;
   margin-left: auto;
   background: url(${funnyPics}) no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top center;
+  max-height: MIN(50vh, 800px);
 
   @media screen and (max-width: 768px) {
-    max-height: 70vw;
+    max-height:217.442px;
   }
 `;
