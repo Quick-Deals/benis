@@ -14,8 +14,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -37,7 +35,12 @@ body {
   line-height: normal;
   padding: 2em 1em;
   overflow-x: hidden;
-  /* max-width: 1440px; */
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 2em 64px;
+  }
 }
 
 h1 {

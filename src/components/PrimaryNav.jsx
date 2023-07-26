@@ -40,7 +40,7 @@ const Container = styled.div`
   border: 4px solid #9c5838;
   background: #fcf4d1;
   width: 280px;
-  height: 779px;
+  max-height: 779px;
   padding: 1em;
   gap: 1em;
   display: flex;
@@ -48,8 +48,13 @@ const Container = styled.div`
   align-items: flex-start;
   /* position: absolute; */
 
-  @media screen and (max-width: 768px) {
-    display: none;
+  @media screen and (max-width: 990px) {
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    top: 74px;
+    z-index: 99;
+    max-height: 562px;
   }
 `;
 
@@ -85,7 +90,7 @@ const Link = styled.li`
     text-align: left;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     font-size: 16px;
     & a {
       font-size: 16px;
