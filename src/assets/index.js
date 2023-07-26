@@ -20,6 +20,7 @@ import image10 from "./images/image10.svg";
 import image11 from "./images/image11.svg";
 import image12 from "./images/image12.svg";
 import image13 from "./images/image13.svg";
+import heroImage from "./images/heroImage.svg";
 
 export {
   logo,
@@ -44,4 +45,5 @@ export {
   image11,
   image12,
   image13,
+  heroImage,
 };

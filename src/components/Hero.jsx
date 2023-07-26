@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import PrimaryNav from "./PrimaryNav";
+import { heroImage } from "../assets";
 
 const Hero = () => {
   return (
@@ -49,7 +50,7 @@ const Header = styled.header`
     line-height: normal;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     font-size: 24px;
     text-align: left;
 
@@ -72,4 +73,16 @@ const Link = styled.a`
 
 const Images = styled.div`
   position: relative;
+  background: grey;
+  /* width: 100%; */
+  height: 100vh;
+  /* max-width: 1082px; */
+  max-height: 787px;
+  background: url(${heroImage}) no-repeat;
+  background-size: contain;
+  flex: 1;
+
+  @media screen and (max-width: 1280px){
+     max-height: 70vw;
+  }
 `;

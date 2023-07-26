@@ -35,7 +35,7 @@ const Container = styled.footer`
   flex-wrap: wrap;
   width: 100%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     padding: 4em 0em;
   }
 `;
@@ -61,7 +61,7 @@ const Stats = styled.div`
   font-weight: 700;
   line-height: normal;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     /* padding: 10px 0; */
   }
 `;
@@ -76,7 +76,7 @@ const Stat = styled.div`
     font-size: 32px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     & p {
       font-size: 12.018px;
     }
@@ -105,7 +105,7 @@ const Links = styled.div`
     background: #fcf4d1;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     & a {
       font-size: 15.196px;
     }

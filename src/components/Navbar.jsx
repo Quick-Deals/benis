@@ -8,6 +8,7 @@ const NavData = [
   { name: "Team", path: "/", color: "#EF780A", bg: "#0BD25B" },
   { name: "Whitepaper", path: "/", color: "#0F8CFF", bg: "#8B1639" },
   { name: "Meme", path: "/", color: "#000", bg: "#FCF4D1" },
+  { name: "Comic", path: "/", color: "#F8E00E", bg: "#18B3BD" },
   { name: "Popular trend", path: "/", color: "#000", bg: "#935335" },
   { name: "Funny pictures", path: "/", color: "#000", bg: "#F00" },
   { name: "Twitter", path: "/", color: "#000", bg: "#FCF4D1" },
@@ -40,7 +41,8 @@ const Nav = styled.nav`
   display: flex;
   width: 100%;
   gap: 2em 5em;
-  @media screen and (max-width: 768px) {
+  margin-bottom: 2em;
+  @media screen and (max-width: 990px) {
     flex-wrap: wrap;
   }
 `;
@@ -54,19 +56,20 @@ const NavHeader = styled.ul`
   max-width: 930px;
   min-width: 769px;
 
-  @media screen and (max-width: 768px) {
-    min-width: 100%;
+  @media screen and (max-width: 1280px) {
+    min-width: MIN(100%, 587px);
     gap: 10px;
   }
 `;
 
 const HeaderLinks = styled.li`
   font-size: 24px;
+
   & a {
     padding: 10px;
     display: flex;
     place-items: center;
-    max-height: 53px;
+
     cursor: pointer;
     font-family: Comic Sans MS;
     font-size: 24px;
@@ -74,15 +77,17 @@ const HeaderLinks = styled.li`
     font-weight: 700;
     line-height: normal;
     color: inherit;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
+    max-height: 53px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1280px) {
     font-size: 16px;
 
     & a {
       font-size: 16px;
+      padding: 8px;
     }
   }
 `;

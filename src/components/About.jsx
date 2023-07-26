@@ -84,7 +84,7 @@ export default About;
 const Container = styled.section`
   padding: 1em;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     padding: 1em 0;
   }
 `;
@@ -99,7 +99,7 @@ const Header = styled.header`
   text-decoration-line: underline;
   margin: 1em 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     font-size: 16px;
   }
 `;
@@ -120,7 +120,7 @@ const Card1 = styled.div`
     line-height: 30px;
     max-width: 896px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 990px) {
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -147,15 +147,16 @@ const Card2 = styled.div`
   max-width: 1059px;
   max-height: 779px;
   border: 4px solid #9c5838;
-  padding: 3em 2em;
+  padding: 0 2em;
   margin: 4em auto;
   display: flex;
   position: relative;
   background: url(${card2}), lightgray 50% / contain no-repeat;
+  background-size: 100%;
 
   @media screen and (max-width: 768px) {
-    width: MIN(100%, 375.199px);
-    padding: 1em;
+    width: MAX(100%, 375.199px);
+    padding: 0 1em;
     background-size: 100%;
     margin: 2em auto;
   }
@@ -195,7 +196,7 @@ const Links1 = styled.ul`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 640px) {
     width: MIN(164.748px, 85%);
     padding: 0;
 
