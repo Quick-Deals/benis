@@ -49,7 +49,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* position: absolute; */
 
   @media screen and (max-width: 990px) {
     position: absolute;
@@ -58,7 +57,6 @@ const Container = styled.div`
     z-index: 99;
     max-height: 562px;
     display: none;
-    /* transform: right(200%); */
     transition: right 0.8s ease, display 1.6s ease 0.8s;
 
     &.show {
