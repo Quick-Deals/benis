@@ -82,7 +82,7 @@ const About = () => {
 export default About;
 
 const Container = styled.section`
-  padding: 1em;
+  padding: 1em 0;
 
   @media screen and (max-width: 990px) {
     padding: 1em 0;
@@ -144,8 +144,9 @@ const Card1 = styled.div`
 `;
 
 const Card2 = styled.div`
-  max-width: 1059px;
-  max-height: 779px;
+  width: 100%;
+  /* max-width: 1059px; */
+  /* max-height: 779px; */
   border: 4px solid #9c5838;
   padding: 0 2em;
   margin: 4em auto;
@@ -153,30 +154,33 @@ const Card2 = styled.div`
   position: relative;
   background: url(${card2}), lightgray 50% / contain no-repeat;
   background-size: 100%;
+  /* background-repeat: no-repeat; */
+  max-height: 80%;
 
   @media screen and (max-width: 768px) {
-    width: MAX(100%, 375.199px);
+    width: 100%;
     padding: 0 1em;
     background-size: 100%;
     margin: 2em auto;
+    max-height: 75%;
   }
 `;
 
 const Links1 = styled.ul`
-  padding: 0;
+  padding: 2em 0;
   padding-inline-start: 2em;
   margin: 0;
   color: #854426;
-  width: MIN(349px, 85%);
+  width: MIN(349px, 50%);
 
   & li {
-    font-size: 24px;
+    font-size: clamp(8.503px, 2vw, 24px);
   }
 
   & li > a {
     color: inherit;
     font-family: Comic Sans MS;
-    font-size: 24px;
+    font-size: inherit;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -191,22 +195,22 @@ const Links1 = styled.ul`
     }
 
     &.bottom {
-      bottom: 3em;
-      right: 2em;
+      bottom: 5%;
+      right: 0;
     }
   }
 
   @media screen and (max-width: 640px) {
     width: MIN(164.748px, 85%);
-    padding: 0;
+    padding: 1em 0;
 
-    & li {
-      font-size: 8.503px;
+    /* &li {
+      font-size: clamp(2vw, 8.503px, 2em);
     }
 
-    & li > a {
+    /* & li > a {
       font-size: 8.503px;
-    }
+    } */ 
 
     &.absolute {
       position: absolute;
