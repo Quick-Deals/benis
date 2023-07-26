@@ -8,7 +8,7 @@ const NavData = [
   { name: "Team", path: "/", color: "#EF780A", bg: "#0BD25B" },
   { name: "Whitepaper", path: "/", color: "#0F8CFF", bg: "#8B1639" },
   { name: "Meme", path: "/", color: "#000", bg: "#FCF4D1" },
-  { name: "Porpular thrend", path: "/", color: "#000", bg: "#935335" },
+  { name: "Popular trend", path: "/", color: "#000", bg: "#935335" },
   { name: "Funny pictures", path: "/", color: "#000", bg: "#F00" },
   { name: "Twitter", path: "/", color: "#000", bg: "#FCF4D1" },
   { name: "Telegram", path: "/", color: "#000", bg: "#E64949" },

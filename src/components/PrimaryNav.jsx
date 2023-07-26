@@ -47,6 +47,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   /* position: absolute; */
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Header = styled.p`

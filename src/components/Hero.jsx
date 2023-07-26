@@ -10,7 +10,9 @@ const Hero = () => {
           BENIS YOUR NEXT <span>MEME TOKEN</span> WITH GREAT POTENTIAL{" "}
         </Header>
         <Link>see latest BENIS</Link>
-        <Images></Images>
+        <Images>
+          
+        </Images>
       </Container>
     </MainContainer>
   );
