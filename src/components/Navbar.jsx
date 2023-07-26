@@ -40,6 +40,9 @@ const Nav = styled.nav`
   display: flex;
   width: 100%;
   gap: 2em 5em;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const NavHeader = styled.ul`
@@ -50,8 +53,15 @@ const NavHeader = styled.ul`
   width: 100%;
   max-width: 930px;
   min-width: 769px;
+
+  @media screen and (max-width: 768px) {
+    min-width: 100%;
+    gap: 10px;
+  }
 `;
+
 const HeaderLinks = styled.li`
+  font-size: 24px;
   & a {
     padding: 10px;
     display: flex;
@@ -66,5 +76,13 @@ const HeaderLinks = styled.li`
     color: inherit;
     height: 100%;
     width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+
+    & a {
+      font-size: 16px;
+    }
   }
 `;

@@ -10,9 +10,7 @@ const Hero = () => {
           BENIS YOUR NEXT <span>MEME TOKEN</span> WITH GREAT POTENTIAL{" "}
         </Header>
         <Link>see latest BENIS</Link>
-        <Images>
-          
-        </Images>
+        <Images></Images>
       </Container>
     </MainContainer>
   );
@@ -21,12 +19,12 @@ const Hero = () => {
 export default Hero;
 
 const MainContainer = styled.section`
-display: flex;
-gap: 2em;
+  display: flex;
+  gap: 2em;
 `;
 
 const Container = styled.section`
-flex: 1;
+  flex: 1;
 `;
 
 const Header = styled.header`
@@ -49,6 +47,16 @@ const Header = styled.header`
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    text-align: left;
+
+    & span {
+      font-size: 24px;
+      text-align: left;
+    }
   }
 `;
 

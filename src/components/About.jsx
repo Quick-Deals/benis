@@ -98,6 +98,10 @@ const Header = styled.header`
   line-height: normal;
   text-decoration-line: underline;
   margin: 1em 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const Card1 = styled.div`
@@ -115,6 +119,13 @@ const Card1 = styled.div`
     font-weight: 700;
     line-height: 30px;
     max-width: 896px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
   }
 
   & div.image {
@@ -146,6 +157,7 @@ const Card2 = styled.div`
     width: MIN(100%, 375.199px);
     padding: 1em;
     background-size: 100%;
+    margin: 2em auto;
   }
 `;
 
@@ -157,7 +169,7 @@ const Links1 = styled.ul`
   width: MIN(349px, 85%);
 
   & li {
-     font-size: 24px;
+    font-size: 24px;
   }
 
   & li > a {
