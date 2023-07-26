@@ -25,11 +25,20 @@ const LogoContainer = styled.a`
   &.white {
     filter: invert(1) saturate(0.1);
   }
+
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 const LogoImg = styled.img`
   width: 100%;
   width: 118.99px;
   height: 89px;
+
+  @media screen and (max-width: 768px) {
+    width: 44.621px;
+    height: 33.375px;
+  }
 `;
 
 const LogoText = styled.p`
@@ -40,4 +49,8 @@ const LogoText = styled.p`
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;

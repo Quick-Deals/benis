@@ -215,7 +215,7 @@ const Links1 = styled.ul`
       }
 
       &.bottom {
-        bottom: 3em;
+        bottom: 5%;
         right: 0;
       }
     }
