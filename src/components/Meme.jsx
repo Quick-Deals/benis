@@ -47,6 +47,12 @@ const Image = styled.div`
     width: MIN(40%, 415px);
     height: 262px;
     background: url(${bill}), lightgray 50% / cover no-repeat;
+
+    @media screen and (max-width: 768px) {
+      width: 122.213px;
+      height: 77.156px;
+      background-size: 100%;
+    }
   }
 
   &.monkey {
@@ -55,6 +61,12 @@ const Image = styled.div`
     width: MIN(40%, 415px);
     height: 474px;
     background: url(${monkey}), lightgray 50% / cover no-repeat;
+
+    @media screen and (max-width: 768px) {
+      width: 122.213px;
+      height: 139.587px;
+      background-size: 100%;
+    }
   }
 
   &.cat {
@@ -63,6 +75,12 @@ const Image = styled.div`
     right: 0;
     height: 368px;
     background: url(${cat}), lightgray 50% / cover no-repeat;
+
+    @media screen and (max-width: 768px) {
+      width: 98.654px;
+      height: 108.372px;
+      background-size: 100%;
+    }
   }
 
   &.laugh {
@@ -73,6 +91,12 @@ const Image = styled.div`
     left: 10%;
     z-index: 1;
     background: url(${laugh}), lightgray 50% / cover no-repeat;
+
+    @media screen and (max-width: 768px) {
+      width: 95.414px;
+      height: 84.813px;
+      background-size: 100%;
+    }
   }
 
   &.blade {
@@ -86,6 +110,12 @@ const Image = styled.div`
     left: 40%;
     transform: translateX(-50%);
     z-index: 0;
+
+    @media screen and (max-width: 768px) {
+      width: 232.351px;
+      height: 153.723px;
+      background-size: 100%;
+    }
   }
 
   &.meme {
@@ -95,5 +125,11 @@ const Image = styled.div`
     top: 438px;
     top: 50%;
     background: url(${meme}), lightgray 50% / cover no-repeat;
+
+    @media screen and (max-width: 768px) {
+      width: 95.414px;
+      height: 84.813px;
+      background-size: 100%;
+    }
   }
 `;
