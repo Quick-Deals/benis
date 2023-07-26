@@ -36,7 +36,7 @@ const Container = styled.footer`
   width: 100%;
 
   @media screen and (max-width: 990px) {
-    padding: 4em 0em;
+    padding: 1em 0em;
   }
 `;
 
