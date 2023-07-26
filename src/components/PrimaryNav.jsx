@@ -53,16 +53,17 @@ const Container = styled.div`
 
   @media screen and (max-width: 990px) {
     position: absolute;
-    right: -1em;
-    top: -40%;
+    right: -100%;
+    top: 74px;
     z-index: 99;
     max-height: 562px;
-    transition: transform 0.8s ease;
-    transform: translateX(200%);
+    display: none;
+    /* transform: right(200%); */
+    transition: right 0.8s ease, display 1.6s ease 0.8s;
 
     &.show {
       display: flex;
-      transform: translateX(0);
+      right: 0;
     }
   }
 `;

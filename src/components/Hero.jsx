@@ -23,7 +23,7 @@ const MainContainer = styled.section`
   display: flex;
   gap: 2em;
   /* overflow-x: hidden; */
-  position: relative;
+  /* position: relative; */
 `;
 
 const Container = styled.section`
