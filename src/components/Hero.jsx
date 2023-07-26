@@ -5,7 +5,7 @@ import { heroImage } from "../assets";
 const Hero = () => {
   return (
     <MainContainer>
-      <PrimaryNav />
+      <PrimaryNav/>
       <Container>
         <Header>
           BENIS YOUR NEXT <span>MEME TOKEN</span> WITH GREAT POTENTIAL{" "}
@@ -74,15 +74,14 @@ const Link = styled.a`
 const Images = styled.div`
   position: relative;
   background: grey;
-  /* width: 100%; */
   height: 100vh;
-  /* max-width: 1082px; */
   max-height: 787px;
   background: url(${heroImage}) no-repeat;
   background-size: contain;
+  background-position: top center;
   flex: 1;
 
-  @media screen and (max-width: 1280px){
-     max-height: 70vw;
+  @media screen and (max-width: 1280px) {
+    max-height: 70vw;
   }
 `;

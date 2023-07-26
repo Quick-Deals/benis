@@ -1,4 +1,6 @@
 import { styled } from "styled-components";
+import { useContext } from "react";
+import { ToggleContext } from "../context/toggleContext";
 
 const LINKS = [
   { name: "Comics & Cartoons", path: "/" },
@@ -19,10 +21,11 @@ const LINKS = [
 ];
 
 const PrimaryNav = () => {
-  return (
-    <Container>
-      <Header>Interest</Header>
+  const { toggle } = useContext(ToggleContext);
 
+  return (
+    <Container className={`${toggle ? "show" : ""}`}>
+      <Header>Interest</Header>
       <Links>
         {LINKS.map((link, index) => (
           <Link key={`${index}`}>
@@ -55,6 +58,13 @@ const Container = styled.div`
     top: 74px;
     z-index: 99;
     max-height: 562px;
+    transition: transform 0.8s ease;
+    transform: translateX(200%);
+
+    &.show {
+      display: flex;
+      transform: translateX(0);
+    }
   }
 `;
 

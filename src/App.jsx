@@ -1,26 +1,25 @@
 import { styled } from "styled-components";
 import "./App.css";
 import Navbar from "./components/Navbar";
-// import PrimaryNav from "./components/PrimaryNav";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Meme from "./components/Meme";
 import Footer from "./components/Footer";
 import FunnyPics from "./components/FunnyPics";
+import { ToggleProvider } from "./context/toggleContext";
 
 function App() {
   return (
-    <>
+    <ToggleProvider>
       <Navbar />
-      {/* <PrimaryNav/> */}
       <Main>
         <Hero />
         <About />
-        <Meme/>
-        <FunnyPics/>
+        <Meme />
+        <FunnyPics />
       </Main>
-      <Footer/>
-    </>
+      <Footer />
+    </ToggleProvider>
   );
 }
 
