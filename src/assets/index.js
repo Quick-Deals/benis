@@ -4,6 +4,7 @@ import card2 from "./images/card2.svg";
 import meme from "./images/meme.svg";
 import heroImage from "./images/heroImage.svg";
 import hamburger from "./images/hamburger.svg";
+import funnyPics from "./images/funnyPics.svg";
 // import bill from "./images/bill.svg";
 // import monkey from "./images/monkey.svg";
 // import cat from "./images/cat.svg";
@@ -30,6 +31,7 @@ export {
   meme,
   heroImage,
   hamburger,
+  funnyPics,
   //   bill,
   //   monkey,
   //   cat,

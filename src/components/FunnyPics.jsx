@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { logo } from "../assets";
+import { funnyPics, logo } from "../assets";
 
 const FunnyPics = () => {
   return (
@@ -8,6 +8,8 @@ const FunnyPics = () => {
         <Logo />
         <p>Funny pics</p>
       </Header>
+
+      <ImgContainer />
     </Container>
   );
 };
@@ -48,5 +50,22 @@ const Logo = styled.div`
   @media screen and (max-width: 990px) {
     width: 61.251px;
     height: 45.813px;
+  }
+`;
+
+const ImgContainer = styled.div`
+  position: relative;
+  width: 100%;
+  padding: 2em;
+  height: 100vh;
+  max-height: 1100px;
+  max-width: 1280px;
+  margin-left: auto;
+  background: url(${funnyPics}) no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media screen and (max-width: 768px) {
+    max-height: 70vw;
   }
 `;

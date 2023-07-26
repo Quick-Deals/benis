@@ -52,10 +52,9 @@ const Container = styled.div`
   /* position: absolute; */
 
   @media screen and (max-width: 990px) {
-    /* display: none; */
     position: absolute;
-    right: 0;
-    top: 74px;
+    right: -1em;
+    top: -40%;
     z-index: 99;
     max-height: 562px;
     transition: transform 0.8s ease;

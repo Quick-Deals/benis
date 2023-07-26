@@ -151,6 +151,7 @@ const Card2 = styled.div`
   padding: 0 2em;
   margin: 4em auto;
   display: flex;
+  /* justify-content: space-between; */
   position: relative;
   background: url(${card2}), lightgray 50% / contain no-repeat;
   background-size: 100%;
@@ -172,6 +173,7 @@ const Links1 = styled.ul`
   margin: 0;
   color: #854426;
   width: MIN(349px, 50%);
+  flex: 1;
 
   & li {
     font-size: clamp(8.503px, 2vw, 24px);

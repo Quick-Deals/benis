@@ -37,6 +37,8 @@ const Container = styled.footer`
 
   @media screen and (max-width: 990px) {
     padding: 1em 0em;
+    min-width: 106%;
+    margin-left: -3%;
   }
 `;
 
@@ -60,10 +62,6 @@ const Stats = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-
-  @media screen and (max-width: 990px) {
-    /* padding: 10px 0; */
-  }
 `;
 
 const Stat = styled.div`
