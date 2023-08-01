@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { card1, card2 } from "../assets";
+import { card2 } from "../assets";
 
 const LINKS = [
   { name: "Business & Finance", path: "" },
@@ -11,8 +11,7 @@ const LINKS = [
   { name: "Pony", path: "" },
   { name: "Current News", path: "" },
   { name: "Worksafe Requests", path: "" },
-  { name: "Very Important Posts", path: "" },
-  { name: "Misc. (NSFW)", path: "" },
+  { name: "Very Important Posts Misc. (NSFW)", path: "" },
   { name: "Random", path: "" },
   { name: "ROBOT9001", path: "" },
   { name: "Politically Incorrect", path: "" },
@@ -39,18 +38,43 @@ const About = () => {
       <Header>About BENIS</Header>
       <Card1>
         <p>
-          Before the year 2023, when time did not exist, the universe manifested
-          a store of value. The identification of this value is best described
-          as the Quest (sometimes the Quest of Hallows). Anyone can relive the
-          manifestation by charging their core of Neptune with enough opal as
-          they sleep. But I understand that there isn’t enough Opal to go around
-          for everyone and some people haven’t Ascended. So I’ll report it here
-          as well. There have been other Ascended who have identified this event
-          as well, but have failed to interpret its tenets and apply them in
-          real life. One such Ascended has been gifted with the visions of the
-          necessity of speed as well as foresee the critical universal event
+          In the cyber realms of 2023, where memes reign supreme, a peculiar
+          phenomenon surfaced—a meme coin called &quot;BenisAintFree23Cents.&quot; This
+          digital enigma fused the essence of Spurdo Sparde&apos;s hilarity, the
+          resounding words of Donald Trump proclaiming &quot;Freedom ain&apos;t free,&quot; and
+          the whimsical musings of Elon Musk with his 23 cents/day Twitter
+          antics.
         </p>
-        <div className="image" />
+        <p>
+          Amidst the vast expanse of the internet, &quot;BenisAintFree23Cents&quot; etched
+          its mark as a symbol of unconventional humor and a sense of
+          camaraderie among its followers. Like an interstellar comet, it
+          streaked through social media feeds, capturing the attention of
+          internet enthusiasts who craved a playful and absurd investment.
+        </p>
+
+        <p>
+          But behind the laughter lay a profound message—that even in the
+          digital cosmos, freedom and levity dance hand in hand. The fusion of
+          seemingly unrelated elements birthed a vibrant and interconnected
+          community, celebrating the joy of shared humor and the boundless
+          creativity of the internet.
+        </p>
+        <p>
+          As &quot;BenisAintFree23Cents&quot; ventured forth, its celestial journey
+          remained uncertain, riding the unpredictable tides of the meme
+          economy. Yet, its cosmic essence endeared itself to those who embraced
+          the spirit of fun and spontaneity in the ever-changing landscape of
+          online culture.
+        </p>
+        <p>
+          With each passing moment, the meme coin continued to carve its niche
+          in the annals of internet lore, an emblem of the delightful and absurd
+          interplay between human ingenuity and digital mirth. And so,
+          &quot;BenisAintFree23Cents&quot; lived on, twinkling in the virtual heavens,
+          inviting curious souls to join its cosmic quest for laughter and a
+          fleeting escape from the ordinary.
+        </p>
       </Card1>
       <Card2>
         <Links1>
@@ -108,6 +132,7 @@ const Card1 = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction:column;
   gap: 4em;
   position: relative;
 
@@ -118,7 +143,7 @@ const Card1 = styled.div`
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
-    max-width: 896px;
+    /* max-width: 896px; */
 
     @media screen and (max-width: 990px) {
       font-size: 14px;
@@ -127,36 +152,21 @@ const Card1 = styled.div`
       line-height: 30px;
     }
   }
-
-  & div.image {
-    /* position: absolute;
-    left: 100%; */
-    min-width: 261px;
-    height: 203px;
-    background: url(${card1}), lightgray 50% / cover no-repeat;
-  }
-
-  @media screen and (max-width: 1120px) {
-    & div.image {
-      display: none;
-    }
-  }
 `;
 
 const Card2 = styled.div`
   width: 100%;
-  /* max-width: 1059px; */
-  /* max-height: 779px; */
   border: 4px solid #9c5838;
   padding: 0 2em;
-  margin: 4em auto;
+  margin: 4em 0;
   display: flex;
-  /* justify-content: space-between; */
+  /* align-items:center; */
   position: relative;
   background: url(${card2}), lightgray 50% / contain no-repeat;
   background-size: 100%;
-  /* background-repeat: no-repeat; */
-  max-height: 80%;
+  height: 779px;
+  max-height: 779px;
+  max-width: 1059px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -168,7 +178,7 @@ const Card2 = styled.div`
 `;
 
 const Links1 = styled.ul`
-  padding: 2em 0;
+  padding: 87px 0;
   padding-inline-start: 2em;
   margin: 0;
   color: #854426;
@@ -205,14 +215,6 @@ const Links1 = styled.ul`
   @media screen and (max-width: 640px) {
     width: MIN(164.748px, 85%);
     padding: 1em 0;
-
-    /* &li {
-      font-size: clamp(2vw, 8.503px, 2em);
-    }
-
-    /* & li > a {
-      font-size: 8.503px;
-    } */ 
 
     &.absolute {
       position: absolute;

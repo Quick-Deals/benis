@@ -28,7 +28,6 @@ const Header = styled.header`
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin: auto;
   color: #000;
   font-family: Comic Sans MS;
   font-size: 32px;
@@ -36,6 +35,7 @@ const Header = styled.header`
   font-weight: 700;
   line-height: normal;
   text-decoration-line: underline;
+  margin: 95px auto;
 
   @media screen and (max-width: 990px) {
     font-size: 16px;
@@ -57,15 +57,13 @@ const ImgContainer = styled.div`
   position: relative;
   width: 100%;
   padding: 2em;
-  height: 100vh;
-  max-width: 1280px;
+  min-height: 100vh;
   margin-left: auto;
   background: url(${funnyPics}) no-repeat;
   background-size: contain;
   background-position: top center;
-  max-height: MIN(50vh, 800px);
 
   @media screen and (max-width: 768px) {
-    max-height:217.442px;
+    max-height: 217.442px;
   }
 `;
